@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Shop with Novafolio - Premium Tech Accessories</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="brand">Novafolio</div>
+    <nav class="nav-links">
+      <a href="index.html" data-link>Home</a>
+      <a href="products.html" data-link>Products</a>
+      <a href="categories.html" data-link>Categories</a>
+      <a href="login.html" data-link>Login</a>
+      <a href="complaints.html" data-link>Support</a>
+    </nav>
+    <button class="hamburger" aria-label="menu">☰</button>
+  </header>
+
+  <main id="app">
+    <!-- HOME -->
+    <section id="home" class="section hero">
+      <div class="hero-inner">
+        <h1 class="hero-title">Shop with <span class="accent">Novafolio</span></h1>
+        <p class="hero-sub">Premium computer accessories — engineered for performance. A Project for ICT.</p>
+        <div class="hero-cta">
+          <a href="products.html" class="btn primary">Shop Now</a>
+          <a href="categories.html" class="btn">Browse Categories</a>
+        </div>
+      </div>
+      <div class="hero-showcase" aria-hidden>
+        <div class="floating-card keyboard">
+          <img src="https://images.unsplash.com/photo-1541140532154-b024d705b90a?w=200&h=120&fit=crop" alt="Keyboard">
+          Mechanical Keyboard
+        </div>
+        <div class="floating-card mouse">
+          <img src="https://images.unsplash.com/photo-1527814050087-3793815479db?w=200&h=120&fit=crop" alt="Mouse">
+          Pro Gaming Mouse
+        </div>
+        <div class="floating-card headset">
+          <img src="https://images.unsplash.com/photo-1599669454699-248893623440?w=200&h=120&fit=crop" alt="Headset">
+          Studio Headset
+        </div>
+      </div>
+      <div class="bg-gradient"></div>
+    </section>
+
+    <!-- FEATURED PRODUCTS -->
+    <section class="section featured">
+      <div class="container">
+        <h2 class="section-title">Featured Products</h2>
+        <div class="grid">
+          <div class="card">
+            <img src="https://images.unsplash.com/photo-1541140532154-b024d705b90a?w=300&h=200&fit=crop" alt="Mechanical Keyboard" class="product-img">
+            <div class="title">Apex Mechanical Keyboard</div>
+            <div class="muted small">Hot-swap switches, RGB, aluminum frame</div>
+            <div class="price">$129</div>
+            <div class="actions">
+              <button class="btn" onclick="location.href='product-detail.html?id=1'">View Details</button>
+              <button class="btn primary" onclick="addToCart(1)">Add to Cart</button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="https://images.unsplash.com/photo-1527814050087-3793815479db?w=300&h=200&fit=crop" alt="Gaming Mouse" class="product-img">
+            <div class="title">Viper Pro Gaming Mouse</div>
+            <div class="muted small">Ergonomic, 16k sensor, wireless</div>
+            <div class="price">$69</div>
+            <div class="actions">
+              <button class="btn" onclick="location.href='product-detail.html?id=2'">View Details</button>
+              <button class="btn primary" onclick="addToCart(2)">Add to Cart</button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="https://images.unsplash.com/photo-1599669454699-248893623440?w=300&h=200&fit=crop" alt="Studio Headset" class="product-img">
+            <div class="title">StudioX Headset</div>
+            <div class="muted small">Closed-back, high fidelity audio</div>
+            <div class="price">$99</div>
+            <div class="actions">
+              <button class="btn" onclick="location.href='product-detail.html?id=3'">View Details</button>
+              <button class="btn primary" onclick="addToCart(3)">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Novafolio</h3>
+          <p>Premium tech accessories for professionals and enthusiasts.</p>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <a href="products.html">All Products</a>
+          <a href="categories.html">Categories</a>
+          <a href="login.html">My Account</a>
+        </div>
+        <div class="footer-section">
+          <h4>Support</h4>
+          <a href="complaints.html">Customer Support</a>
+          <a href="complaints.html">Returns</a>
+          <a href="complaints.html">Shipping Info</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        © <span id="year"></span> Shop with Novafolio — All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

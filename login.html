@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Login - Novafolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="brand">Novafolio</div>
+    <nav class="nav-links">
+      <a href="index.html" data-link>Home</a>
+      <a href="products.html" data-link>Products</a>
+      <a href="categories.html" data-link>Categories</a>
+      <a href="login.html" data-link>Login</a>
+      <a href="complaints.html" data-link>Support</a>
+    </nav>
+    <button class="hamburger" aria-label="menu">☰</button>
+  </header>
+
+  <main class="section login-section">
+    <div class="login-wrap">
+      <div class="login-card">
+        <h2>Welcome back</h2>
+        <form id="login-form">
+          <label class="field">
+            <input type="email" id="email" required placeholder=" ">
+            <span>Email</span>
+          </label>
+          <label class="field">
+            <input type="password" id="password" required placeholder=" ">
+            <span>Password</span>
+          </label>
+          <div class="form-options">
+            <label class="checkbox">
+              <input type="checkbox"> Remember me
+            </label>
+            <a href="#" class="forgot-password">Forgot password?</a>
+          </div>
+          <button class="btn primary full-width" type="submit">Log In</button>
+        </form>
+        <div class="login-divider">
+          <span>or continue with</span>
+        </div>
+        <div class="social-login">
+          <button class="btn social google">Google</button>
+          <button class="btn social github">GitHub</button>
+        </div>
+        <p class="small">Don't have an account? <a href="signup.html">Sign up</a></p>
+      </div>
+      <div class="login-visual" aria-hidden>
+        <div class="login-orbit"></div>
+        <div class="floating-icon">⌨️</div>
+        <div class="floating-icon">🖱️</div>
+        <div class="floating-icon">🎧</div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">© <span id="year"></span> Shop with Novafolio — All rights reserved.</div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

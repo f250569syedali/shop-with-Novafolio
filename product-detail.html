@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Product Details - Novafolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="brand">Novafolio</div>
+    <nav class="nav-links">
+      <a href="index.html" data-link>Home</a>
+      <a href="products.html" data-link>Products</a>
+      <a href="categories.html" data-link>Categories</a>
+      <a href="login.html" data-link>Login</a>
+      <a href="complaints.html" data-link>Support</a>
+    </nav>
+    <button class="hamburger" aria-label="menu">☰</button>
+  </header>
+
+  <main class="section product-detail-page">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a> / 
+        <a href="products.html">Products</a> / 
+        <span id="product-category">Keyboards</span> / 
+        <span>Product Details</span>
+      </div>
+
+      <div class="product-detail">
+        <div class="product-gallery">
+          <div class="main-image">
+            <img id="main-product-img" src="https://images.unsplash.com/photo-1541140532154-b024d705b90a?w=600&h=400&fit=crop" alt="Product Image">
+          </div>
+          <div class="image-thumbnails">
+            <img src="https://images.unsplash.com/photo-1541140532154-b024d705b90a?w=150&h=100&fit=crop" alt="Thumbnail 1" class="thumbnail active">
+            <img src="https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=150&h=100&fit=crop" alt="Thumbnail 2" class="thumbnail">
+            <img src="https://images.unsplash.com/photo-1558040456-7b36d8d1c58c?w=150&h=100&fit=crop" alt="Thumbnail 3" class="thumbnail">
+          </div>
+        </div>
+
+        <div class="product-info">
+          <h1 id="product-title">Apex Mechanical Keyboard</h1>
+          <div class="product-meta">
+            <span class="category" id="product-category-tag">Keyboards</span>
+            <span class="rating">★★★★★ (128 reviews)</span>
+          </div>
+          <div class="price" id="product-price">$129.00</div>
+          <div class="product-description">
+            <p>Experience the ultimate typing experience with our Apex Mechanical Keyboard. Featuring hot-swappable switches, customizable RGB lighting, and a durable aluminum frame.</p>
+            <ul>
+              <li>Hot-swappable mechanical switches</li>
+              <li>16.8 million color RGB backlighting</li>
+              <li>Aircraft-grade aluminum frame</li>
+              <li>Programmable macro keys</li>
+              <li>Detachable USB-C cable</li>
+            </ul>
+          </div>
+
+          <div class="product-options">
+            <div class="option">
+              <label>Switch Type:</label>
+              <select>
+                <option>Cherry MX Red</option>
+                <option>Cherry MX Blue</option>
+                <option>Cherry MX Brown</option>
+              </select>
+            </div>
+            <div class="option">
+              <label>Color:</label>
+              <select>
+                <option>Black</option>
+                <option>White</option>
+                <option>Silver</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="product-actions">
+            <div class="quantity">
+              <label>Quantity:</label>
+              <input type="number" value="1" min="1" max="10">
+            </div>
+            <button class="btn primary large" onclick="addToCart(currentProductId)">Add to Cart</button>
+            <button class="btn large" onclick="buyNow(currentProductId)">Buy Now</button>
+          </div>
+
+          <div class="product-features">
+            <div class="feature">
+              <strong>🚚 Free Shipping</strong>
+              <span>On orders over $50</span>
+            </div>
+            <div class="feature">
+              <strong>↩️ 30-Day Returns</strong>
+              <span>No questions asked</span>
+            </div>
+            <div class="feature">
+              <strong>🛡️ 2-Year Warranty</strong>
+              <span>Full manufacturer coverage</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-tabs">
+        <div class="tabs">
+          <button class="tab active" data-tab="description">Description</button>
+          <button class="tab" data-tab="specs">Specifications</button>
+          <button class="tab" data-tab="reviews">Reviews</button>
+        </div>
+        <div class="tab-content">
+          <div id="description" class="tab-pane active">
+            <h3>Product Description</h3>
+            <p>The Apex Mechanical Keyboard is designed for professionals and enthusiasts who demand the best typing experience. Built with premium materials and advanced features.</p>
+          </div>
+          <div id="specs" class="tab-pane">
+            <h3>Specifications</h3>
+            <table>
+              <tr><td>Switch Type</td><td>Mechanical (Hot-swappable)</td></tr>
+              <tr><td>Backlight</td><td>RGB (16.8 million colors)</td></tr>
+              <tr><td>Frame</td><td>Aircraft-grade aluminum</td></tr>
+              <tr><td>Connectivity</td><td>USB-C detachable</td></tr>
+            </table>
+          </div>
+          <div id="reviews" class="tab-pane">
+            <h3>Customer Reviews</h3>
+            <div class="review">
+              <div class="review-header">
+                <strong>Alex Johnson</strong>
+                <span class="rating">★★★★★</span>
+              </div>
+              <p>Amazing keyboard! The build quality is exceptional and the typing feel is perfect.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">© <span id="year"></span> Shop with Novafolio — All rights reserved.</div>
+  </footer>
+
+  <script src="app.js"></script>
+  <script>
+    const currentProductId = new URLSearchParams(window.location.search).get('id') || 1;
+    // Product data would be loaded based on ID in a real application
+  </script>
+</body>
+</html>
