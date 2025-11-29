@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Product Categories - Novafolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="brand">Novafolio</div>
+    <nav class="nav-links">
+      <a href="index.html" data-link>Home</a>
+      <a href="products.html" data-link>Products</a>
+      <a href="categories.html" data-link>Categories</a>
+      <a href="login.html" data-link>Login</a>
+      <a href="complaints.html" data-link>Support</a>
+    </nav>
+    <button class="hamburger" aria-label="menu">☰</button>
+  </header>
+
+  <main class="section categories-page">
+    <div class="container">
+      <div class="page-header">
+        <h1 class="section-title">Product Categories</h1>
+        <p class="muted">Browse our products by category</p>
+      </div>
+
+      <div class="categories-grid">
+        <div class="category-card" onclick="location.href='products.html?category=keyboards'">
+          <div class="category-image">
+            <img src="https://images.unsplash.com/photo-1541140532154-b024d705b90a?w=400&h=250&fit=crop" alt="Keyboards">
+          </div>
+          <div class="category-content">
+            <h3>Keyboards</h3>
+            <p>Mechanical, wireless, and gaming keyboards</p>
+            <span class="product-count">12 products</span>
+          </div>
+        </div>
+
+        <div class="category-card" onclick="location.href='products.html?category=mice'">
+          <div class="category-image">
+            <img src="https://images.unsplash.com/photo-1527814050087-3793815479db?w=400&h=250&fit=crop" alt="Mice">
+          </div>
+          <div class="category-content">
+            <h3>Mice</h3>
+            <p>Gaming, ergonomic, and wireless mice</p>
+            <span class="product-count">8 products</span>
+          </div>
+        </div>
+
+        <div class="category-card" onclick="location.href='products.html?category=headsets'">
+          <div class="category-image">
+            <img src="https://images.unsplash.com/photo-1599669454699-248893623440?w=400&h=250&fit=crop" alt="Headsets">
+          </div>
+          <div class="category-content">
+            <h3>Headsets</h3>
+            <p>Gaming and studio headphones</p>
+            <span class="product-count">6 products</span>
+          </div>
+        </div>
+
+        <div class="category-card" onclick="location.href='products.html?category=hubs'">
+          <div class="category-image">
+            <img src="https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?w=400&h=250&fit=crop" alt="Hubs & Adapters">
+          </div>
+          <div class="category-content">
+            <h3>Hubs & Adapters</h3>
+            <p>USB-C hubs, docks, and adapters</p>
+            <span class="product-count">5 products</span>
+          </div>
+        </div>
+
+        <div class="category-card" onclick="location.href='products.html?category=accessories'">
+          <div class="category-image">
+            <img src="https://images.unsplash.com/photo-1600003263720-95b45a4035d5?w=400&h=250&fit=crop" alt="Accessories">
+          </div>
+          <div class="category-content">
+            <h3>Accessories</h3>
+            <p>Mouse pads, cables, and more</p>
+            <span class="product-count">15 products</span>
+          </div>
+        </div>
+
+        <div class="category-card" onclick="location.href='products.html?category=audio'">
+          <div class="category-image">
+            <img src="https://images.unsplash.com/photo-1572569511254-d8f925fe2cbb?w=400&h=250&fit=crop" alt="Audio">
+          </div>
+          <div class="category-content">
+            <h3>Audio</h3>
+            <p>Speakers, microphones, and audio interfaces</p>
+            <span class="product-count">7 products</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">© <span id="year"></span> Shop with Novafolio — All rights reserved.</div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
